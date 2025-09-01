@@ -12,10 +12,10 @@ const LayoutDecoration: React.FC<Props> = ({ children }) => {
         className="pointer-events-none absolute inset-0 hidden lg:grid grid-cols-2"
       >
         <div className="flex items-center justify-start ">
-          <SideLayout className="-ml-[22px] translate-y-[-250px]" />
+          <SideLayout className="-ml-[25px] translate-y-[-220px]" />
         </div>
         <div className="flex items-center justify-end">
-          <SideLayout2 className="-mr-[22px] -translate-y-[-250px]" />
+          <SideLayout2 className="-mr-[15px] -translate-y-[-250px]" />
         </div>
       </div>
 

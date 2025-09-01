@@ -22,7 +22,7 @@ function App() {
             <span className="block">tu crédito no fue aprobado</span>
           </h1>
 
-          <p className="mt-4 text-12 text-blue-900 font-bold h-22 pt-2 ">
+          <p className="mt-4 text-12 text-blue-900 font-bold min-h-22 pt-2 ">
             Gracias por confiar en nosotros, dadas nuestras políticas no podemos
             ofrecerte un microcrédito, inténtalo más adelante.
           </p>
