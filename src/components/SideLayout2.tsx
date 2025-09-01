@@ -25,6 +25,7 @@ const maskPatterns = [
 ];
 
 type Props = { className?: string };
+const smallerElements = new Set([16, 17, 19, 20]);
 
 const SideLayout2: React.FC<Props> = ({ className = "" }) => {
   return (
@@ -34,8 +35,11 @@ const SideLayout2: React.FC<Props> = ({ className = "" }) => {
           key={index}
           className={`${
             mask ? colorPalette[index % colorPalette.length] : "opacity-0"
-          } 
-                      w-8 h-8 md:w-10 md:h-10 rounded-md`}
+          } ${
+            smallerElements.has(index)
+              ? "w-6 h-6 md:w-9.5 md:h-9.5"
+              : "w-8 h-8 md:w-10 md:h-10"
+          } rounded-md`}
         />
       ))}
     </div>
